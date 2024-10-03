@@ -63,7 +63,7 @@ button:hover {
   align-items: center;
   margin: 0 30px;
   gap: 10px;
-
+  /* This syntax seems to work without scss, so used this one :) */
   .left {
     margin: 10px 0;
     .main {
