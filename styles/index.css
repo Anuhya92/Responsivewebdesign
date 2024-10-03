@@ -1,0 +1,147 @@
+body {
+  background-image: linear-gradient(to right, lightgray 1px, transparent 1px),
+    linear-gradient(to bottom, lightgray 1px, transparent 1px);
+  background-size: 5rem 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+
+  .nav-right {
+    i {
+      display: none;
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  height: 28px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 10px;
+}
+
+a {
+  color: #2f281e;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 102px;
+  color: #242635;
+}
+
+.main-info {
+  margin-left: 30px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #242635;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  gap: 10px;
+
+  .left {
+    margin: 10px 0;
+    .main {
+      .main-info {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .right {
+    margin: 10px 0;
+    .section-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 770px) {
+  body {
+    background-size: 3rem 4rem;
+  }
+
+  .introduction {
+    display: block;
+    margin-top: 40px;
+    .left {
+      .main {
+        text-align: center;
+
+        .main-title {
+          font-size: 72px;
+        }
+
+        .main-info {
+          font-size: 22px;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 320px) {
+  body {
+    background-size: 3rem 4rem;
+  }
+
+  nav {
+    .nav-right {
+      .links {
+        display: none;
+      }
+
+      i {
+        display: inline;
+      }
+    }
+  }
+
+  .introduction {
+    display: block;
+    margin-top: 40px;
+    .left {
+      .main {
+        text-align: center;
+
+        .main-title {
+          font-size: 36px;
+        }
+
+        .main-info {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
