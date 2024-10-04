@@ -2,6 +2,8 @@ body {
   background-image: linear-gradient(to right, lightgray 1px, transparent 1px),
     linear-gradient(to bottom, lightgray 1px, transparent 1px);
   background-size: 5rem 2.5rem;
+  max-width: 1440px;
+  width: 100%;
 }
 
 nav {
@@ -75,9 +77,22 @@ button:hover {
 
   .right {
     margin: 10px 0;
-    .section-image {
-      max-width: 100%;
-      height: auto;
+
+    .section-image2,
+    .section-image3 {
+      display: none;
+    }
+    .section-image1 {
+      display: block;
+    }
+
+    .section-image1,
+    .section-image2,
+    .section-image3 {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -103,6 +118,17 @@ button:hover {
           font-size: 22px;
           line-height: 33px;
         }
+      }
+    }
+
+    .right {
+      .section-image1,
+      .section-image3 {
+        display: none;
+      }
+
+      .section-image2 {
+        display: block;
       }
     }
   }
@@ -141,6 +167,16 @@ button:hover {
           font-size: 12px;
           line-height: 18px;
         }
+      }
+    }
+    .right {
+      .section-image1,
+      .section-image2 {
+        display: none;
+      }
+
+      .section-image3 {
+        display: block;
       }
     }
   }
